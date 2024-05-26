@@ -3,14 +3,13 @@ import { MessageSvcService } from '../message-svc.service';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-message-show',
+  selector: 'app-message-update',
   standalone: true,
   imports: [FormsModule],
-  templateUrl: './message-show.component.html',
-  styleUrl: './message-show.component.scss'
+  templateUrl: './message-update.component.html',
+  styleUrl: './message-update.component.scss'
 })
-export class MessageShowComponent implements OnInit {
-
+export class MessageUpdateComponent implements OnInit{
   message: string = '';
 
   constructor(private messageSvc:MessageSvcService) { }
